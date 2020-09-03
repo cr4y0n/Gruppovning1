@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap); 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.showcase {
+    background: url("/img/gun/gundalf1.jpg") center center / cover;
+    background-color: rgb(172, 172, 172);
+    height: 95vh;
+}
+body {
+    text-align: center;
+}
+
+.hobbits {
+    font-size: ;
+    margin: 350px 300px;
+}
+form p {
+    font-family: 'Lexend Peta';
+    background-color: rgb(255, 217, 0); 
+    display: inline-block;
+    padding: 10px;
+}
+form label {
+    font-family: 'Lexend Peta';
+    background-color: rgb(255, 217, 0); 
+    display: inline-block;
+    padding: 10px;
+}
+form input {
+    margin: 20px 20px;
+    font-family: 'Lexend Peta';
+  }
+h3 {
+    font-family: 'Lexend Peta';  
+    background-color: rgb(255, 217, 0); 
+    display: block;
+    padding: 10px;
+ }
+.nav-bar{
+    width:100%;
+    height: 5vh;
+    background: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar a{
+    text-decoration:none;
+    color:black;
+    padding: 0vw 1vw;
+    border-right: black 0.1vw solid;
+    border-left: black 0.1vw solid;
+    font-family: 'Permanent Marker', cursive;
+}
+a:hover {
+    color: rgb(236, 151, 40);
+}
+.nav-bar > a {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+li{
+    list-style-type: none;
+    display:inline;
+    margin: 0 2vw;
+    font-size: 3vh;
+    z-index: 1;
+  }
+ul{
+    display:flex;
+  }
+
+footer {
+    text-align: center;
+    opacity: 0.8;
+     padding: 10px;
+}
+
+footer p{
+    font-family: 'Permanent Marker', cursive;
+}

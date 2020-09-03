@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Monika {
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.showcase {
+  background: url("/img/monika/MonikaFoxx.JPG") center center / cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav-bar{
+    width:100%;
+    height: 5vh;
+    background: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form{
+    text-align: center;
+    position: absolute;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+.nav-bar a{
+    text-decoration:none;
+    color:black;
+    padding: 0vw 1vw;
+    border-right: black 0.1vw solid;
+    border-left: black 0.1vw solid;
+    font-family: 'Permanent Marker', cursive;
+}
+
+a:hover {
+    color: rgb(236, 151, 40);
+}
+
+.nav-bar > a {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+li{
+    list-style-type: none;
+    display:inline;
+    margin: 0 2vw;
+    font-size: 3vh;
+    z-index: 1;
+  }
+  
+  ul{
+    display:flex;
+  }
+  
+footer {
+    text-align: center;
+    opacity: 0.8;
+     padding: 10px;
+}
+
+footer p{
+    font-family: 'Permanent Marker', cursive;
+    
+}
+

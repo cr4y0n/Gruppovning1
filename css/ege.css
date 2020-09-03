@@ -1,0 +1,214 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    
+    background: rgb(78,144,36);
+    background: linear-gradient(100deg, rgba(78,144,36,1) 0%, rgba(215,97,5,1) 51%, rgba(33,39,199,1) 100%);
+
+    /* background: rgb(78,144,36);
+    background: linear-gradient(142deg, rgba(78,144,36,1) 3%, rgba(245,108,2,1) 52%, rgba(33,108,199,1) 93%); */
+
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 34%, rgba(0,212,255,1) 100%);
+    width: 100%; */
+
+    display:grid;
+    grid-template-areas:'head'
+                        'h2'
+                        'img1'
+                        'text1'
+                        'img2'
+                        'text2'
+                        'img3'
+                        'text3'
+                         ;
+}
+
+header{
+    grid-area: head;
+    color: white;
+    line-height: 10vh;
+    height: 10vh;
+    font-size: 32px;
+    border: white solid 0.2vw;
+    margin: 1vw 5vw;
+    border-radius: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+header a{
+    position: absolute;
+    left: 85%;
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to right, white, midnightblue 50%, black 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+a:hover {
+  background-position: 0 100%;
+}
+
+h2{
+    color:white;
+    grid-area: h2;
+    text-align:center;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+
+.img1{
+    grid-area: img1;
+    height: 80vh;
+    border: white solid 0.2vw;
+    margin: 2vw 5vw;
+    background-image: url("/img/ege/chameleon.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img2{
+    grid-area: img2;
+    height: 80vh;
+    border: white solid 0.2vw;
+    margin-top: 2.5vw;
+    margin: 0vw 5vw;
+    background-image: url("/img/ege/frog.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text1{
+    grid-area: text1;
+    height: 10vh;
+    border: white solid 0.2vw;
+    margin: 1vw 5vw;
+    border-radius: 2.5vw;
+} 
+
+.text2{
+    grid-area: text2;
+    height: 13vh;
+    border: white solid 0.2vw;
+    margin: 1vw 5vw;
+    border-radius: 2.5vw;
+    margin-top: 2.5vw;
+}
+
+.text1 ,.text2 p {
+    color:white;
+    padding: 1.5vw 1vw;     
+}
