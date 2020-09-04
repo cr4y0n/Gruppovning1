@@ -10,7 +10,7 @@
 
     <div class="showcase">      
         <nav class="nav-bar">
-            <a href="index.html">Grupp 7</a>
+            <a href="index7.html">Grupp 7</a>
             <ul>
                 <li><a href="tove.html">Tove</a></li>
                 <li><a href="/filipa.html">Filipa</a></li>
@@ -20,21 +20,41 @@
                 <li><a href="/cilla.html">Cilla</a></li> 
             </ul>
         </nav>
-        <div class="about">
-            <div class="container-info">
-                <h1>Tove Brandt</h1>
-                <h3>Lorem ih3sum dolor sit amet consectetur adipisicing elit. Veritatis, nisi.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, doloribus impedit maxime reprehenderit beatae ea, similique ut accusamus, minima obcaecati animi voluptatem illum veritatis fugit laudantium recusandae neque. Ipsa, quisquam.
-                </p>
-                <h3>Lorem ih3sum dolor sit amet consectetur adipisicing elit. Veritatis, nisi.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur iste explicabo voluptas facere blanditiis nemo ratione quam omnis. Assumenda libero necessitatibus quisquam ad aperiam quas omnis laudantium quod nesciunt voluptatem!</p>
-            </div>
-            <img src="https://i1.sndcdn.com/avatars-000331527108-3mdb5n-t500x500.jpg" alt="">
+        
+        <div class="main-container">
+            <h1>Tove vill hälsa på dig</h1>
+            <form action="#">
+                <div class="text-input">
+                    <label for="name">Vad heter du?</label>
+                    <input type="text" class="user-name" placeholder="Namn"><br>
+                </div>
+                <input type="submit" class="submit-btn">
+            </form>
+            <div class="user-input">
+            <!-- <p class="user-is">Gran</p> -->
         </div>
+        </div>
+
         <footer>
             <p>&copy Grupp 7 för evigt</p> 
         </footer>
     </div>
 
 </body>
+<script>
+    document.querySelector('.submit-btn').addEventListener('click', function() {
+    var userName;
+    userName = document.querySelector('.user-name').value;
+
+    console.log(userName);
+
+    if (userName) {
+
+    var html ='<p class="user-is">Hej %name%!</p>';
+    var newHtml = html.replace('%name%', userName)
+
+    document.querySelector('.user-input').insertAdjacentHTML('beforeend', newHtml);
+    }
+});
+</script>
 </html>
