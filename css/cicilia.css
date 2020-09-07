@@ -62,9 +62,11 @@ li{
   }
   
 footer {
+    clear: right;
+    margin-top: 60%;
     text-align: center;
     opacity: 0.8;
-     padding: 10px;
+    padding: 10px;
 }
 
 footer p{
@@ -72,3 +74,37 @@ footer p{
     
 }
 
+.left{
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.5);
+    color: rgb(102, 102, 101);
+    padding: 15px 10px 15px 10px;
+    border: solid 2px rgb(7, 7, 7);
+    text-align: center;
+    margin: 45px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    max-width: 40%;
+    position: absolute;
+
+}
+.right{
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.5);
+    color: rgb(102, 102, 101);
+    padding: 15px 10px;
+    border: solid 2px black;
+    text-align: center;
+    margin: 45px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    float: right;
+    max-width: 40%;
+
+
+}
+.fab{
+
+    color: #8a3ab9;
+   
+}
