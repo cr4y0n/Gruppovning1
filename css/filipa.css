@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Squada+One&display=swap');
+/*@import "css/style.css";*/
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +15,7 @@
   height: 100vh;
 }
 
-.nav-bar{
+.nav-bar {
     width:100%;
     height: 5vh;
     background: #fff;
@@ -26,13 +25,13 @@
     justify-content: space-between;
 }
 
-.form{
+.form {
     text-align: center;
     position: absolute;
     padding-bottom: 100px;
     z-index: 1;
 }
-.nav-bar a{
+.nav-bar a {
     text-decoration:none;
     color:black;
     padding: 0vw 1vw;
@@ -50,17 +49,17 @@ a:hover {
     font-size: 1.7rem;
 }
 
-li{
+li {
     list-style-type: none;
     display:inline;
     margin: 0 2vw;
     font-size: 3vh;
     z-index: 1;
-  }
+}
   
-  ul{
+ul {
     display:flex;
-  }
+}
   
 footer {
     text-align: center;
@@ -68,17 +67,34 @@ footer {
     padding: 10px;
 }
 
-footer p{
+footer p {
     font-family: 'Permanent Marker', cursive;
     
 }
 
-.jibberish{
-    height: 100%;
-    width: 100%;
-    top: 50%;
+.jibberish {
+    top: 45%;
     left: 45%;
-    font-family: "Squada One", arial;
     color: yellow;
     position: absolute;
+    font-family: 'Squada One', cursive;
+    background-color: rgba(10, 10, 10, 0.5);
+    padding: 20px;
+    line-height: 24px;
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.batcave {
+    padding: 5px 10px;
+    background: yellow;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Squada One', cursive;
+}
+.batcave:hover {
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
 }

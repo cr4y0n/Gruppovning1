@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/filipa.css">
+    <script src="js/filipa.js"></script>
 </head>
 <body>
     <div class="showcase">      
@@ -19,22 +20,26 @@
                 <li><a href="/cilla.html">Cilla</a></li> 
             </ul>
         </nav>
-        <form action="" class="jibberish">
-            <p>Riddle me this, who are you?</p>
+        <div class="jibberish">
+          <form method="" action="">
+            <p>State your credentials to enter.</p>
             <br>
-            <input type="checkbox" id="vengeance">
+            <input type="checkbox" id="vengeance" name="option">
             <label for="vengeance">I am vengeance!</label>
             <br>
-            <input type="checkbox" id="night">
+            <input type="checkbox" id="night" name="option">
             <label for="night">I am the night!!</label> 
             <br>
-            <input type="checkbox" id="batman">
-            <label for="batman">I am batman!!!</label>
+            <input type="checkbox" id="batman" name="option">
+            <label for="batman">I am Batman!!!</label>
             <br>
-            <input type="checkbox" id="all">
-            <label for="all">All of the above.</label>   
+            <input type="checkbox" onClick="toggle(this)" id="all">
+            <label for="all">All of the above, duh.</label>
             <br>
-        </form>
+          </form>
+          <br>
+          <button class="batcave">To the Batcave!</button>
+        </div>
     </div>
     <footer>
         <p>&copy Grupp 7 för evigt</p> 
