@@ -55,7 +55,7 @@ ul {
 
 .main-container {
     display: flex;
-    max-width: 1100px;
+    max-width: 1500px;
     height: 95vh;
     z-index: 3;
     display: flex;
@@ -83,14 +83,14 @@ ul {
     z-index: 1;
     margin: 25vh 0 12vh 0;
     font-weight: 200;
-    width: 100%;
+    width: 80%;
     text-align: center;
 }
 
 .showcase .main-container form {
     z-index: 1;
     color: black;
-    width: 50%;
+    width: 80%;
 }
 
 .showcase .main-container .text-input label,
