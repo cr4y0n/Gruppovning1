@@ -57,7 +57,7 @@ li{
     z-index: 1;
   }
   
-  ul{
+ul{
     display:flex;
   }
   
@@ -107,4 +107,8 @@ footer p{
     
     color: #8a3ab9;
    
+}
+.carousel{
+    width: auto;
+    
 }
