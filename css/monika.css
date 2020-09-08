@@ -10,10 +10,11 @@
 .Monika {
     font-style: oblique;
     font-size: 30px;
+    text-shadow: black;
 }
 
 .showcase {
-  background: url("/img/monika/MonikaFoxx.JPG") center center / cover;
+  background: url("../img/monika/MonikaFoxx.JPG ") center center / cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -64,6 +65,16 @@ li{
   
   ul{
     display:flex;
+  }
+
+  div .info {
+      color: yellowgreen;
+      background-color: #000000;
+      text-align: center;
+      margin: 30px 30px 0px 30px;
+      padding: 20px;
+      
+    
   }
   
 footer {
